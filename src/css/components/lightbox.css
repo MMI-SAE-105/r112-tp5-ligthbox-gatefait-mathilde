@@ -1,3 +1,28 @@
 /**
 * Lightbox
 */
+
+dialog#lightbox {
+    position: fixed;
+    border-radius: 15 px;
+    border-color: #a93838;
+    border-width: 10px;
+    background-color: #ccc;
+
+}
+
+#Lightbox ::before {
+    content: 'X';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #0f0;
+    width: 20px;
+    border-radius: 10px;
+    border: 10px solid #f00;
+}
+
+::backdrop {
+    background-color: #f00;
+    opacity: 0, 8;
+}
