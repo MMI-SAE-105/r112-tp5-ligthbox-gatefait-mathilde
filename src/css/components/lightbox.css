@@ -5,7 +5,7 @@
 dialog#lightbox {
     position: fixed;
     border-radius: 15 px;
-    border-color: #a93838;
+    border-color: #000000;
     border-width: 10px;
     background-color: #ccc;
 
@@ -23,6 +23,24 @@ dialog#lightbox {
 }
 
 ::backdrop {
-    background-color: #f00;
+    background-color: rgb(153, 144, 144);
     opacity: 0, 8;
+}
+
+dialog#lightbox[open].entree {
+    animation: entree 1s;
+}
+
+dialog#lightbox[open].sortie {
+    animation: sortie 1s;
+}
+
+@keyframes sortie {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
