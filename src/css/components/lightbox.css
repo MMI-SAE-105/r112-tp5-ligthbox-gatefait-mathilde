@@ -3,7 +3,6 @@
 */
 
 dialog#lightbox {
-    position: fixed;
     border-radius: 15 px;
     border-color: #ffffff;
     border-width: 10px;
@@ -24,10 +23,14 @@ dialog#lightbox {
 
 ::backdrop {
     background-color: rgb(153, 144, 144);
-    opacity: 0,8;
+    opacity: 0.8;
+
 }
 
 dialog#lightbox[open] {
+    animation: entree 3s;
+}
+dialog#lightbox[open]::backdrop {
     animation: entree 3s;
 }
 
